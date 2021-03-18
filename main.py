@@ -123,7 +123,7 @@ C_range = [2e-5*100**k for k in range(5)]
 gamma_range = [2e-15*100**k for k in range(5)]
 
 if __name__ == "__main__":
-    ticker = 'ZTS'
+    ticker = 'BMRI'
 
     stock = Stock(ticker, considerOHL=False,
                   train_test_data=_train_test_data_, train_size=0.8)

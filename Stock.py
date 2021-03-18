@@ -76,9 +76,9 @@ class Stock:
         else:
             try:
                 self.wholeDF = pd.read_csv(
-                    self.__db_dir__ + '/{0}/{1}.csv'.format(ticker[0].upper(), ticker), parse_dates=True)
+                    self.__db_dir__ + '/{0}/{1}.csv'.format('A', ticker), parse_dates=True)
                 self.df = pd.read_csv(
-                    self.__db_dir__ + '/{0}/{1}.csv'.format(ticker[0].upper(), ticker), parse_dates=True)
+                    self.__db_dir__ + '/{0}/{1}.csv'.format('A', ticker), parse_dates=True)
             except FileNotFoundError as e:
                 print(e)
                 raise e
